@@ -7,7 +7,7 @@ import Registration from "../modal/Registration";
 import { api } from "../../../utils/helper";
 
 const PollComponent = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); 
+  
   const [isLoginModalOpen, setLoginModalOpen] = useState(false);
   const [isRegistrationModalOpen, setRegistrationModalOpen] = useState(false);
   const [user, setUser] = useState(null);
@@ -18,17 +18,7 @@ const PollComponent = () => {
     setUser(JSON.parse(userInfo))
   }, [])
 
-  // Simulate checking login status from local storage or authentication logic
-  // useEffect(() => {
-  //   const storedLoginStatus = localStorage.getItem(isLoggedIn) === true;
-  //   setIsLoggedIn(storedLoginStatus);
-  // }, []);
-
-  // useEffect(() => {
-  //   if (isLoggedIn) {
-  //     window.location.replace("https://admin.motamot.io/");
-  //   }
-  // }, [isLoggedIn]);
+ 
 
   const handleClick = () => {
     if (user) {

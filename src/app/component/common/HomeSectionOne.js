@@ -233,7 +233,7 @@ const HomeComponent = () => {
        
 
 
-        //swiper slide here
+        
 
         <Swiper
           spaceBetween={50}

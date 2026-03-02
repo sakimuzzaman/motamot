@@ -84,7 +84,7 @@ const PollPage = () => {
 
   useEffect(() => {
     livePollFilter()
-  }, [responseData])
+  }, [responseData, livePollFilter])
 
   const handleFilterClick = (filter) => {
     setSelectedFilter(filter);

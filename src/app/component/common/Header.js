@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FiSearch } from "react-icons/fi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import LoginComponent from "../modal/LogIn";
